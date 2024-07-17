@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ot-arhmm"
+dynamic = ["version"]
+description = 'Toolkit for analyzing optical tweezer data using an autoregressive hidden Markov Model.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "bdawes", email = "bdawes@bu.edu" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/kamenetska-lab/ot-arhmm#readme"
+Issues = "https://github.com/kamenetska-lab/ot-arhmm/issues"
+Source = "https://github.com/kamenetska-lab/ot-arhmm"
+
+[tool.hatch.version]
+path = "src/ot_arhmm/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ot_arhmm tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ot_arhmm", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/ot_arhmm/__about__.py",
+]
+
+[tool.coverage.paths]
+ot_arhmm = ["src/ot_arhmm", "*/ot-arhmm/src/ot_arhmm"]
+tests = ["tests", "*/ot-arhmm/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
