@@ -1,1 +1,1 @@
-from OT_arHMM.switching import *
+from ot_arhmm.switching import *
