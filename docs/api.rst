@@ -3,7 +3,7 @@ API Reference
 
 This reference lists all the classes and functions contained in the package.
 
-.. currentmodule:: OT_arHMM.switching
+.. currentmodule:: ot_arhmm.switching
 
 Classes
 -------
