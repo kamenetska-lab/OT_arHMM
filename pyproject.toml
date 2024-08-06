@@ -24,7 +24,13 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "lumicks.pylake",
+  "numpy",
+  "statsmodels",
+  "scipy",
+  "matplotlib"
+]
 
 [project.urls]
 Documentation = "https://github.com/kamenetska-lab/ot-arhmm#readme"
