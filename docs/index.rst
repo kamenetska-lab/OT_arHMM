@@ -18,5 +18,5 @@ Installation
 ------------
 This package can be installed from github via pip::
 
-   pip install git+https://github.com/kamenetska-lab/OT_arHMM.git
+   pip install ot-arhmm
 
