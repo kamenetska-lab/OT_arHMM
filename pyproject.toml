@@ -34,7 +34,7 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/kamenetska-lab/ot-arhmm#readme"
+Documentation = "ot-arhmm.readthedocs.io"
 Issues = "https://github.com/kamenetska-lab/ot-arhmm/issues"
 Source = "https://github.com/kamenetska-lab/ot-arhmm"
 
